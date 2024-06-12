@@ -45,7 +45,11 @@ const Category = () => {
       </View>
 
       <FlatList showsHorizontalScrollIndicator={false} horizontal={true} data={categoryList} renderItem={({ item, index }) => (
-        <CategoryItem category={item} key={index} onCategoryPress={(category) => console.log(category)} />
+        <CategoryItem
+          category={item}
+          key={index}
+          onCategoryPress={(category) => console.log(category)}
+        />
       )} />
 
     </View>

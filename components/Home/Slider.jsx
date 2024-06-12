@@ -27,7 +27,7 @@ const Slider = () => {
             <Text style={{
                 fontFamily: 'outfit-bold',
                 fontSize: 20,
-                padding: 20,
+                padding: 15,
                 paddingLeft:15,
                 paddingTop: 20,
                 marginBottom: -8,
@@ -43,7 +43,7 @@ const Slider = () => {
                         width: 300,
                         height: 150,
                         borderRadius: 15,
-                        marginRight: 15,
+                        marginRight: 20,
                     }} />
                 )}
                 style={{paddingLeft: 20}}

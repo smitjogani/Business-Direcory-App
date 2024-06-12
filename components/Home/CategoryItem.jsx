@@ -4,7 +4,7 @@ import { Colors } from '../../constants/Colors'
 
 const CategoryItem = ({ category, onCategoryPress }) => {
   return (
-    <TouchableOpacity onPress={(category) => onCategoryPress(category)}>
+    <TouchableOpacity onPress={(c) => onCategoryPress(category)}>
       <View style={{
         padding: 10,
         backgroundColor: Colors.ICON_BG,
@@ -21,6 +21,8 @@ const CategoryItem = ({ category, onCategoryPress }) => {
           }}
 
         />
+
+        
       </View>
       <Text style={{
         fontSize: 14,

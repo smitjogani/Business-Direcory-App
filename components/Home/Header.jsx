@@ -28,7 +28,7 @@ const Header = () => {
                     style={{
                         width: 45,
                         height: 45,
-                        borderRadius: 99
+                        borderRadius: 99,
                     }}
                 />
                 <View>
