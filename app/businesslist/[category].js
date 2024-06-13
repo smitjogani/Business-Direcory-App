@@ -31,51 +31,51 @@ const businessListByCategory = () => {
         const querySnapShot = await getDocs(q);
         querySnapShot.forEach((doc) => {
             // console.log(doc.data());
-            setBusinessList(prev => [...prev, doc.data()])
+            setBusinessList(prev => [...prev, { id: doc?.id, ...doc.data() }])
         })
         setLoading(false);
     }
 
     return (
         <View>
-            {businessList?.length > 0 && loading==flase? <FlatList
+            {businessList?.length > 0 && loading == false ? <FlatList
                 data={businessList}
                 renderItem={({ item, index }) => (
                     <BusinessListCard key={index} business={item} />
                 )}
             />
                 :
-                loading?<ActivityIndicator
-                style={{
-                    marginTop: '10%'
-                }}
+                loading ? <ActivityIndicator
+                    style={{
+                        marginTop: '10%'
+                    }}
                     size={'large'}
                     color={Colors.PRIMARY}
-                />:
-                <View style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    marginTop: '50%'
-                }}>
+                /> :
+                    <View style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        marginTop: '50%'
+                    }}>
 
-                    <Image source={require('../../assets/images/empty.png')}
-                        style={{
-                            width: 150,
-                            height: 150,
-                        }}
-                    />
-                    <Text
-                        style={{
-                            fontFamily: 'outfit-medium',
-                            fontSize: 20,
-                            color: Colors.GRAY  
-                        }}
-                    >
-                        No Business Found
-                    </Text>
+                        <Image source={require('../../assets/images/empty.png')}
+                            style={{
+                                width: 150,
+                                height: 150,
+                            }}
+                        />
+                        <Text
+                            style={{
+                                fontFamily: 'outfit-medium',
+                                fontSize: 20,
+                                color: Colors.GRAY
+                            }}
+                        >
+                            No Business Found
+                        </Text>
 
-                </View>
+                    </View>
             }
         </View>
     )
