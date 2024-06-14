@@ -21,7 +21,7 @@ const PopularBusiness = () => {
 
         querySnapShot.forEach((doc) => {
             // console.log(doc.data()); 
-            setBusinessList(prev => [...prev, doc.data()]);
+            setBusinessList(prev => [...prev, { id: doc.id, ...doc.data() }]);
         })
     }
 
@@ -51,13 +51,13 @@ const PopularBusiness = () => {
                 data={businessList}
                 showsHorizontalScrollIndicator={false}
                 horizontal={true}
-                renderItem={({ item, index }) => 
-                    (
-                        <PopularBusinessCard
-                            key={index}
-                            business={item}
-                        />
-                    )
+                renderItem={({ item, index }) =>
+                (
+                    <PopularBusinessCard
+                        key={index}
+                        business={item}
+                    />
+                )
                 }
             />
         </View>
