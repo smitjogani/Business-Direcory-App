@@ -2,13 +2,12 @@ import { View, Text, ActivityIndicator, ScrollView } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { useLocalSearchParams } from 'expo-router';
 import { db } from "../../Config/FirebaseConfig";
-import { Colors, colors } from "../../constants/Colors";
-import { collection, doc, getDoc } from 'firebase/firestore';
+import { Colors } from "../../constants/Colors";
+import { doc, getDoc } from 'firebase/firestore';
 import BusinessIntro from '../../components/BusinessDetail/BusinessIntro';
 import ActionButton from '../../components/BusinessDetail/ActionButton';
 import About from '../../components/BusinessDetail/About';
-
-
+import Reviews from "../../components/BusinessDetail/Reviews";
 
 const businessDetails = () => {
 
@@ -26,7 +25,7 @@ const businessDetails = () => {
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-            setBusinessDetails(docSnap.data());
+            setBusinessDetails({ id: docSnap.id, ...docSnap.data() });
             setLoading(false);
         }
         else {
@@ -55,8 +54,10 @@ const businessDetails = () => {
                     {/* About Section */}
                     <About business={businessDetails} />
 
-                </View>
+                    {/* Review Section */}
+                    <Reviews business={businessDetails} />
 
+                </View>
             }
         </ScrollView>
     )

@@ -6,7 +6,7 @@ const About = ({business}) => {
         <View style={{
             padding: 20,
             backgroundColor: '#fff',
-            height: '100%'
+            // height: 180
         }}>
             <Text style={{
                fontFamily: 'outfit-bold', 
