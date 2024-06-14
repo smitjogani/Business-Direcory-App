@@ -41,7 +41,7 @@ const Header = () => {
                 </View>
             </View>
 
-            {/* Searcbar */}
+            {/* Searchbar */}
             <View style={{
                 display: 'flex',
                 flexDirection: 'row',
