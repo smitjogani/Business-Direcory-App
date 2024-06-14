@@ -1,4 +1,4 @@
-import { View, Text, ActivityIndicator } from 'react-native';
+import { View, Text, ActivityIndicator, ScrollView } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { useLocalSearchParams } from 'expo-router';
 import { db } from "../../Config/FirebaseConfig";
@@ -6,6 +6,7 @@ import { Colors, colors } from "../../constants/Colors";
 import { collection, doc, getDoc } from 'firebase/firestore';
 import BusinessIntro from '../../components/BusinessDetail/BusinessIntro';
 import ActionButton from '../../components/BusinessDetail/ActionButton';
+import About from '../../components/BusinessDetail/About';
 
 
 
@@ -34,7 +35,7 @@ const businessDetails = () => {
     }
 
     return (
-        <View>
+        <ScrollView>
             {loading ?
                 <ActivityIndicator
                     style={{
@@ -50,11 +51,14 @@ const businessDetails = () => {
 
                     {/* Action Buttons */}
                     <ActionButton business={businessDetails} />
+
                     {/* About Section */}
+                    <About business={businessDetails} />
+
                 </View>
 
             }
-        </View>
+        </ScrollView>
     )
 }
 
