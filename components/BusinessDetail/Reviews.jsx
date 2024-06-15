@@ -78,7 +78,7 @@ const Reviews = ({ business }) => {
 
       {/* Display Previous Reviews */}
       <View>
-        {business?.reviews.map((item, index) => (
+        {business?.reviews?.map((item, index) => (
           <View style={{
             display: 'flex',
             flexDirection: 'row',
