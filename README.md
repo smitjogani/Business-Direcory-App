@@ -1,38 +1,27 @@
-# Welcome to your Expo app 👋
+👉 Project Title : Business Directory App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+👉 Details : This project allow user to find there nearest shop with contact details and as well he/she also host business on app and also manage it's business and login with Google Auth Login System.
 
-## Get started
+👉 Tools & Technology : React Native, Firebase, Cleark
 
-1. Install dependencies
+Demo Images : 
 
-   ```bash
-   npm install
-   ```
+![WhatsApp Image 2024-06-16 at 9 40 57 PM](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/3894e9fa-43c9-4ee3-8816-f59e914e8ddf)
 
-2. Start the app
+![WhatsApp Image 2024-06-16 at 9 40 56 PM](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/2c6fe135-9402-467f-bd8d-ad89b5613eaa)
 
-   ```bash
-    npx expo start
-   ```
+![WhatsApp Image 2024-06-16 at 9 40 56 PM (1)](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/3174b3f0-c8b0-4eee-804e-18a555a807ce)
 
-In the output, you'll find options to open the app in a
+![WhatsApp Image 2024-06-16 at 9 40 55 PM](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/62234eeb-3460-4d5f-8ecd-91cf610905c1)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+![WhatsApp Image 2024-06-16 at 9 40 55 PM (1)](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/b311b3ad-8f21-4d69-845a-384f475e73c7)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+![WhatsApp Image 2024-06-16 at 9 40 55 PM (2)](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/1ff1cce8-64c4-4d22-a336-2b183150ef7d)
 
-## Get a fresh project
+![WhatsApp Image 2024-06-16 at 9 40 54 PM](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/ac477496-c148-48bc-b819-7d271a119096)
 
-When you're ready, run:
+![WhatsApp Image 2024-06-16 at 9 40 54 PM (1)](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/e7763a56-f343-4ed8-9c81-2cf3e0f513b9)
 
-```bash
-npm run reset-project
-```
+![WhatsApp Image 2024-06-16 at 9 40 54 PM (2)](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/2c9d1c80-cee0-45fc-add2-26b43e60fb3c)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-
+![WhatsApp Image 2024-06-16 at 9 40 53 PM (1)](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/6302cb32-2fa8-4cf5-bd2e-8d03750afab0)
