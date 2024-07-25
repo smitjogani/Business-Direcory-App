@@ -1,10 +1,23 @@
-👉 Project Title : Business Directory App
+# Project Title 
+Business Directory App
 
-👉 Details : This project allow user to find there nearest shop with contact details and as well he/she also host business on app and also manage it's business and login with Google Auth Login System.
+# Details 
+This project allow user to find there nearest shop with contact details and as well he/she also host business on app and also manage it's business and login with Google Auth Login System.
 
-👉 Tools & Technology : React Native, Firebase, Cleark
+# Tools & Technology 
+React Native, Firebase, Cleark
 
-Demo Images : 
+# Features
+
+1. Login (with Google) and Logout
+2. Search Business
+3. Add Business (with validations)
+4. Give Review
+5. Share Business
+6. Show his/her business
+
+
+# Demo Images : 
 
 ![WhatsApp Image 2024-06-16 at 9 40 57 PM](https://github.com/smitjogani/Business-Direcory-App/assets/100015904/3894e9fa-43c9-4ee3-8816-f59e914e8ddf)
 
