@@ -12,11 +12,12 @@ React Native, Firebase, Cleark
 1. Login (with Google) and Logout
 2. Search Business
 3. Add Business (with validations)
-4. Give Review
-5. Share Business
-6. Show his/her business
-7. Rating
-8. Feedback
+4. Delete Business
+5. Give Review
+6. Share Business
+7. Show his/her business
+8. Rating
+9. Feedback
 
 
 # Demo Images : 
