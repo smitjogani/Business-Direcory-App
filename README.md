@@ -15,6 +15,8 @@ React Native, Firebase, Cleark
 4. Give Review
 5. Share Business
 6. Show his/her business
+7. Rating
+8. Feedback
 
 
 # Demo Images : 
